@@ -1,0 +1,23 @@
+﻿@model WebServicesView.Models.ValorRecibido
+
+@{
+    ViewData["Title"] = "Datos";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>datos a ingresar</title>
+</head>
+<body>
+    <div>
+        <h3>Valor ingresado de Raspberry : @Model.valorRBP</h3>
+        <form action="RasberryPi/Resultante" method="post">
+            <label>Valor a Restar <input type="text" name="numero" value="" /></label>
+            <input type="submit" name="enviar" value="Enviar" />
+        </form>
+    </div>
+</body>
+</html>
+
